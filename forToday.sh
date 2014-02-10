@@ -40,7 +40,7 @@ if [ -f $SEARCH_PATH ];
     emacs "$TODAY_FILE" -nw
   else
     #TIME = 
-    echo "#+STARTUP: overview" >> "$TODAY_FILE"
+    echo "#+STARTUP: showall" >> "$TODAY_FILE"
     echo "#+AUTHOR: n-critser" >> "$TODAY_FILE"
     echo "#+TITLE: $TODAY_FILE" >> "$TODAY_FILE"
     echo "*`zdump EST`*" >> "$TODAY_FILE"
