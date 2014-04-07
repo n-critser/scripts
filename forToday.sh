@@ -16,7 +16,7 @@ clear
 TODAY="`date +"%m"`.`date +"%d"`.`date +"%y"`"
 #/home/chaos/Desktop/DoThisShit
 SEARCH_DIR=/home/"$USER"/dayIsDone
-TODAY_FILE="$TODAY.org"
+TODAY_FILE="GTD.org"
 SEARCH_PATH=$SEARCH_DIR/$TODAY_FILE
 echo "$SEARCH_DIR"
 echo "$SEARCH_PATH"
@@ -34,7 +34,10 @@ if [ -f $SEARCH_PATH ];
     echo "$SEARCH_PATH"
     echo "$TODAY_FILE"
     echo "$TODAY"
-    echo "** " >> "$TODAY_FILE"
+    echo "* $TODAY" >> "$TODAY_FILE"
+    echo "*`zdump EST`*" >> "$TODAY_FILE"
+    echo "** Tasks hit C-c C-t" >> "$TODAY_FILE"
+    echo "*** TODO  This Shit" >> "$TODAY_FILE" 
     cal `date +"%m"` `date +"%Y"`
     #more "$TODAY_FILE"
     emacs "$TODAY_FILE" -nw
