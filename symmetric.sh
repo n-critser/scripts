@@ -3,7 +3,7 @@
 DIR=/home/"$USER"/dayIsDone
 echo $DIR
 TODAY="`date +"%m"`.`date +"%d"`.`date +"%y"`"
-TODAY_FILE="$TODAY.org"
+TODAY_FILE="GTD.org"
 FILE=$DIR/$TODAY_FILE
 PUBLIC=$DIR/publicToday/
 echo $FILE
