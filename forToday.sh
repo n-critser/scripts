@@ -34,10 +34,10 @@ if [ -f $SEARCH_PATH ];
     echo "$SEARCH_PATH"
     echo "$TODAY_FILE"
     echo "$TODAY"
-    echo "* $TODAY" >> "$TODAY_FILE"
-    echo "*`zdump EST`*" >> "$TODAY_FILE"
-    echo "** Tasks hit C-c C-t" >> "$TODAY_FILE"
-    echo "*** TODO  This Shit" >> "$TODAY_FILE" 
+    echo "** $TODAY" >> "$TODAY_FILE"
+    echo "**`zdump EST`*" >> "$TODAY_FILE"
+    echo "*** Tasks hit C-c C-t" >> "$TODAY_FILE"
+    echo "**** TODO  This Shit" >> "$TODAY_FILE" 
     cal `date +"%m"` `date +"%Y"`
     #more "$TODAY_FILE"
     emacs "$TODAY_FILE" -nw
