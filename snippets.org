@@ -1,0 +1,8 @@
+#+TITLE: snippets.org
+#+DATE: <2014-06-02 Mon>
+
+
+* RSYNC
+rsync example with exclusion for .git/ but inclusion of directory
+also has -n dryrun flag active
+$ rsync -rvn --exclude='.git/'  ./fall14 /media/removable/boomstick/Hunter/
